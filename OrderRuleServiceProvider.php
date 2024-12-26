@@ -2,7 +2,6 @@
 
 namespace Amplify\System\OrderRule;
 
-use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
 
 class OrderRuleServiceProvider extends ServiceProvider
@@ -27,7 +26,5 @@ class OrderRuleServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->loadRoutesFrom(__DIR__.'/Routes/web.php');
-
-        AliasLoader::getInstance()->alias('OrderRuleCheck', OrderRuleCheck::class);
     }
 }
