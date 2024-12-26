@@ -20,8 +20,8 @@ Route::namespace('Amplify\System\OrderRule\Http\Controllers')->group(function ()
     });
 
     Route::name('frontend.')->middleware('customers')->group(function () {
-        Route::resource('order-rules', 'OrderRuleController');
-        Route::resource('order-awaiting-approvals', 'OrderAwaitingApprovalController');
+        Route::resource('order-rules', OrderRuleController::class);
+        Route::resource('order-awaiting-approvals', OrderAwaitingApprovalController::class);
         Route::get('order/{order_id}/checkout', [OrderAwaitingApprovalController::class, 'confirm'])->name('order.checkout');
         Route::post('order/{order_id}/confirm', [OrderAwaitingApprovalController::class, 'action'])->name('order.action');
         Route::resource('order-approvals', 'OrderApprovalController');
