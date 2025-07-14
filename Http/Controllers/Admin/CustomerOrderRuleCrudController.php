@@ -5,7 +5,7 @@ namespace Amplify\System\OrderRule\Http\Controllers\Admin;
 use Amplify\System\OrderRule\Http\Requests\CustomerOrderRuleRequest;
 use Amplify\System\OrderRule\Models\CustomerOrderRule;
 use Amplify\System\OrderRule\Models\OrderRule;
-use App\Abstracts\BackpackCustomCrudController;
+use Amplify\System\Abstracts\BackpackCustomCrudController;
 use App\Models\Contact;
 use App\Models\Customer;
 use App\Models\CustomerAddress;

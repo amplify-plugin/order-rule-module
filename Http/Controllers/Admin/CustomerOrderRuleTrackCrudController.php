@@ -4,7 +4,7 @@ namespace Amplify\System\OrderRule\Http\Controllers\Admin;
 
 use Amplify\System\OrderRule\Http\Requests\CustomerOrderRuleTrackRequest;
 use Amplify\System\OrderRule\Models\CustomerOrderRuleTrack;
-use App\Abstracts\BackpackCustomCrudController;
+use Amplify\System\Abstracts\BackpackCustomCrudController;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 
 /**
