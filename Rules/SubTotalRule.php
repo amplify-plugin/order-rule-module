@@ -4,11 +4,11 @@ namespace Amplify\System\OrderRule\Rules;
 
 use Amplify\ErpApi\Collections\ShippingLocationCollection;
 use Amplify\ErpApi\Facades\ErpApi;
+use Amplify\System\OrderRule\Traits\OrderRuleTrait;
 use Amplify\System\OrderRule\Interfaces\OrderRuleInterface;
 use App\Models\Cart;
 use App\Models\Customer;
 use App\Models\CustomerOrder;
-use App\Traits\OrderRuleTrait;
 
 class SubTotalRule implements OrderRuleInterface
 {
