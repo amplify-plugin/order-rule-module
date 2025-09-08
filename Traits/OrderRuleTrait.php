@@ -2,7 +2,7 @@
 
 namespace Amplify\System\OrderRule\Traits;
 
-use App\Models\Customer;
+use Amplify\System\Backend\Models\Customer;
 
 trait OrderRuleTrait
 {

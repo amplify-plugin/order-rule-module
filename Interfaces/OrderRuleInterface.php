@@ -2,8 +2,8 @@
 
 namespace Amplify\System\OrderRule\Interfaces;
 
-use App\Models\Customer;
-use App\Models\CustomerOrder;
+use Amplify\System\Backend\Models\Customer;
+use Amplify\System\Backend\Models\CustomerOrder;
 
 interface OrderRuleInterface
 {

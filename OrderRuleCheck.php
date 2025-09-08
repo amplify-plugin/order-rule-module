@@ -2,12 +2,12 @@
 
 namespace Amplify\System\OrderRule;
 
+use Amplify\System\Backend\Models\Cart;
+use Amplify\System\Backend\Models\CustomerOrder;
+use Amplify\System\Backend\Models\Event;
 use Amplify\System\OrderRule\Models\CustomerOrderRule;
 use Amplify\System\OrderRule\Models\CustomerOrderRuleTrack;
 use App\Factories\NotificationFactory;
-use App\Models\Cart;
-use App\Models\CustomerOrder;
-use App\Models\Event;
 use Illuminate\Database\Eloquent\Collection;
 
 class OrderRuleCheck

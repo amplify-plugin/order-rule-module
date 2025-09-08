@@ -4,10 +4,10 @@ namespace Amplify\System\OrderRule\Http\Controllers;
 
 use Amplify\ErpApi\Facades\ErpApi;
 use Amplify\Frontend\Traits\HasDynamicPage;
+use Amplify\System\Backend\Models\Event;
 use Amplify\System\OrderRule\Models\CustomerOrderRuleTrack;
 use App\Factories\NotificationFactory;
 use App\Http\Controllers\Controller;
-use App\Models\Event;
 use Illuminate\Http\Request;
 
 class OrderAwaitingApprovalController extends Controller
@@ -101,7 +101,7 @@ class OrderAwaitingApprovalController extends Controller
 
     public function createOrderERP(int $orderID, $customerDetails)
     {
-        $customerOrder = \App\Models\CustomerOrder::find($orderID);
+        $customerOrder = \Amplify\System\Backend\Models\CustomerOrder::find($orderID);
 
         return $customerOrder->createOrderOrQuoteERP([
             'order_type' => 'O',

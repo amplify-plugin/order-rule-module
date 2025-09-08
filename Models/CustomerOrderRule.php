@@ -2,7 +2,7 @@
 
 namespace Amplify\System\OrderRule\Models;
 
-use App\Models\Customer;
+use Amplify\System\Backend\Models\Customer;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

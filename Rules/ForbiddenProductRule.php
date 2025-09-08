@@ -2,11 +2,11 @@
 
 namespace Amplify\System\OrderRule\Rules;
 
-use Amplify\System\OrderRule\Traits\OrderRuleTrait;
+use Amplify\System\Backend\Models\Customer;
+use Amplify\System\Backend\Models\CustomerOrder;
+use Amplify\System\Backend\Models\Product;
 use Amplify\System\OrderRule\Interfaces\OrderRuleInterface;
-use App\Models\Customer;
-use App\Models\CustomerOrder;
-use App\Models\Product;
+use Amplify\System\OrderRule\Traits\OrderRuleTrait;
 
 class ForbiddenProductRule implements OrderRuleInterface
 {

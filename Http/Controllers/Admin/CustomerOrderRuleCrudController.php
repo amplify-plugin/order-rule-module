@@ -2,13 +2,13 @@
 
 namespace Amplify\System\OrderRule\Http\Controllers\Admin;
 
+use Amplify\System\Abstracts\BackpackCustomCrudController;
+use Amplify\System\Backend\Models\Contact;
+use Amplify\System\Backend\Models\Customer;
+use Amplify\System\Backend\Models\CustomerAddress;
 use Amplify\System\OrderRule\Http\Requests\CustomerOrderRuleRequest;
 use Amplify\System\OrderRule\Models\CustomerOrderRule;
 use Amplify\System\OrderRule\Models\OrderRule;
-use Amplify\System\Abstracts\BackpackCustomCrudController;
-use App\Models\Contact;
-use App\Models\Customer;
-use App\Models\CustomerAddress;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use Backpack\CRUD\app\Library\Widget;
 use Backpack\Pro\Http\Controllers\Operations\FetchOperation;

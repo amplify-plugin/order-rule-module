@@ -2,8 +2,8 @@
 
 namespace Amplify\System\OrderRule\Models;
 
-use App\Models\Contact;
-use App\Models\CustomerOrder;
+use Amplify\System\Backend\Models\Contact;
+use Amplify\System\Backend\Models\CustomerOrder;
 use Backpack\CRUD\app\Models\Traits\CrudTrait;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;

@@ -2,11 +2,11 @@
 
 namespace Amplify\System\OrderRule\Http\Controllers;
 
+use Amplify\System\Backend\Models\Contact;
 use Amplify\System\OrderRule\Http\Requests\CustomerOrderRuleRequest;
 use Amplify\System\OrderRule\Models\CustomerOrderRule;
 use Amplify\System\OrderRule\Models\OrderRule;
 use App\Http\Controllers\Controller;
-use App\Models\Contact;
 use Exception;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
