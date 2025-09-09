@@ -91,7 +91,7 @@ class CustomerOrderRuleCrudController extends BackpackCustomCrudController
             ->select(['id', 'customer_name'])->get()
             ->toArray();
 
-        CRUD::setCreateView('crud::pages.customer-order-rules.create');
+        CRUD::setCreateView('backend::pages.customer-order-rules.create');
 
         $this->crud->setCreateContentClass('col-md-12');
 
@@ -166,7 +166,7 @@ class CustomerOrderRuleCrudController extends BackpackCustomCrudController
         $this->setupCreateOperation();
         $this->crud->setEditContentClass('col-md-12');
 
-        CRUD::setEditView('crud::pages.customer-order-rules.create');
+        CRUD::setEditView('backend::pages.customer-order-rules.create');
     }
 
     public function store()
