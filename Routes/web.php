@@ -24,7 +24,6 @@ Route::namespace('Amplify\System\OrderRule\Http\Controllers')->group(function ()
 });
 
 Route::name('frontend.')->group(function () {
-
     Route::middleware(['web', 'customers'])->group(function () {
         Route::resource('order-rules', OrderRuleController::class);
         Route::resource('order-awaiting-approvals', OrderAwaitingApprovalController::class);
@@ -41,4 +40,6 @@ Route::name('frontend.')->group(function () {
     Route::delete('/order-rule/{rule}', [CustomerOrderRuleController::class, 'destroy'])->name('order-rule.destroy');
     Route::get('/order-rule', [DynamicPageLoadController::class, 'index'])->name('order-rule');
     Route::match(['post', 'put'], '/order-rule', [CustomerOrderRuleController::class, 'creataOrUpdate'])->name('save-order-rule');
+    Route::post('/order-rule-track-approval',
+        [OrderAwaitingApprovalController::class, 'action'])->name('frontend.order.approval');
 });
