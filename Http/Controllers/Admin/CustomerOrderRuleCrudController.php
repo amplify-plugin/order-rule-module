@@ -63,7 +63,7 @@ class CustomerOrderRuleCrudController extends BackpackCustomCrudController
         CRUD::column('enabled')->type('boolean');
         CRUD::column('updated_at');
 
-        Widget::add()->type('script')->content('assets/js/admin/forms/customer-order-rule.js');
+        Widget::add()->type('script')->content('vendor/backend/js/forms/customer-order-rule.js');
     }
 
     protected function setupCustomRoutes($segment, $routeName, $controller)
