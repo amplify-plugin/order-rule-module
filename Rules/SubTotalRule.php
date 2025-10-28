@@ -23,7 +23,7 @@ class SubTotalRule implements OrderRuleInterface
 
     public function prepareForValidation(): void
     {
-        $this->shipAddresses = ErpApi::getCustomerShippingLocationList(['customer_number' => $this->customer->customer_erp_id]);
+        $this->shipAddresses = ErpApi::getCustomerShippingLocationList(['customer_number' => $this->customer->erp_id]);
     }
 
     /**
