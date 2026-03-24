@@ -1,0 +1,25 @@
+name: Send release notes to Support
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Create payload JSON
+        run: |
+          cat <<EOF > payload.json
+          {
+            "repo": "${{ github.repository }}",
+            "release": ${{ toJson(github.event.release) }}
+          }
+          EOF
+
+      - name: Send release data to server
+        run: |
+          curl -X POST https://support.amplify-b2b.com/api/changelog \
+            -H "Content-Type: application/json" \
+            -d @payload.json
