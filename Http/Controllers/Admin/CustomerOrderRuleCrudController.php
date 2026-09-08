@@ -11,7 +11,7 @@ use Amplify\System\OrderRule\Models\CustomerOrderRule;
 use Amplify\System\OrderRule\Models\OrderRule;
 use Backpack\CRUD\app\Library\CrudPanel\CrudPanelFacade as CRUD;
 use Backpack\CRUD\app\Library\Widget;
-use Backpack\Pro\Http\Controllers\Operations\FetchOperation;
+use Backpack\CRUD\app\Http\Controllers\Operations\FetchOperation;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
